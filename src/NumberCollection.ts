@@ -10,7 +10,13 @@ class NumberCollection extends OrderBy {
     this.length = data.length;
   }
 
-  // TODO
+  ascending(): void {
+    this.collection = this.collection.sort((a, b) => a - b);
+  }
+
+  descending(): void {
+    this.collection = this.collection.sort((a, b) => b - a);
+  }
 
 }
 
