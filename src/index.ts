@@ -1,5 +1,5 @@
 import NumberCollection from './NumberCollection';
-// import CharacterCollection from './CharacterCollection';
+import CharacterCollection from './CharacterCollection';
 // import LinkedList from './LinkedList';
 
 /*
@@ -39,18 +39,18 @@ console.groupEnd();
   Create descending() to order characters based on character set.
   Expected output: "ztjjgbaZHA"
  */
-// const givenCharacterString = 'gHjtbAjazZ';
-// console.group("Character String");
-//   const characterCollection = new CharacterCollection(givenCharacterString);
-//   characterCollection.ascending();
-//   console.group("ascending():");
-//     console.log(characterCollection.collection); // AHZabgjjtz
-//   console.groupEnd();
-//   characterCollection.descending();
-//   console.group("descending():");
-//     console.log(characterCollection.collection); // ztjjgbaZHA
-//   console.groupEnd();
-// console.groupEnd();
+const givenCharacterString = 'gHjtbAjazZ';
+console.group("Character String");
+  const characterCollection = new CharacterCollection(givenCharacterString);
+  characterCollection.ascending();
+  console.group("ascending():");
+    console.log(characterCollection.collection); // AHZabgjjtz
+  console.groupEnd();
+  characterCollection.descending();
+  console.group("descending():");
+    console.log(characterCollection.collection); // ztjjgbaZHA
+  console.groupEnd();
+console.groupEnd();
 
 
 /*

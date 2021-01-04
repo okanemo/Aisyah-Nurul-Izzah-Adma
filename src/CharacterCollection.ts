@@ -10,7 +10,13 @@ class CharacterCollection extends OrderBy {
     this.length = data.length;
   }
 
-  // TODO
+  ascending(): void{
+    this.collection = this.collection.split('').sort().join('');
+  }
+
+  descending(): void{
+    this.collection = this.collection.split('').sort((a, b) => a > b ? -1 : 1).join('');
+  } 
 
 }
 
