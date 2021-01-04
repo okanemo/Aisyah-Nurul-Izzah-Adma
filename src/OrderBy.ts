@@ -2,13 +2,10 @@ abstract class OrderBy {
   abstract length: number;
   // Add additional abstract when needed
 
-  ascending(): void {
-      // TODO
-  }
+  abstract ascending(): void;
 
-  descending(): void {
-      // TODO
-  }
+  abstract descending(): void;
+  
 }
 
 export default OrderBy;
