@@ -16,22 +16,6 @@ class LinkedList extends OrderBy {
     super();
   }
 
-  get length(): number {
-    if (!this.head) {
-      return 0;
-    }
-
-    let counter = 1;
-    let node = this.head;
-
-    while (node.next) {
-      counter++;
-      node = node.next;
-    }
-
-    return counter;
-  }
-
   add(data: number): void {
     const node = new Node(data);
 
