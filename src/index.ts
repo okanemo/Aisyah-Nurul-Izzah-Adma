@@ -1,6 +1,6 @@
 import NumberCollection from './NumberCollection';
 import CharacterCollection from './CharacterCollection';
-// import LinkedList from './LinkedList';
+import LinkedList from './LinkedList';
 
 /*
   Hint: Please follow some basic Software Engineering Principles like DRY, SOLID and so on.
@@ -62,20 +62,20 @@ console.groupEnd();
   Create descending() to order from largest number to smallest.
   Expected output: 322 -> 32 -> 23 -> 8 -> 0 -> -5
  */
-// const givenLinkedList = new LinkedList();
-// givenLinkedList.add(23);
-// givenLinkedList.add(32);
-// givenLinkedList.add(-5);
-// givenLinkedList.add(0);
-// givenLinkedList.add(322);
-// givenLinkedList.add(8);
-// console.group("LinkedList");
-//   console.group("ascending():");
-//     givenLinkedList.ascending();
-//     givenLinkedList.print(); // -5 -> 0 -> 8 -> 23 -> 32 -> 322
-//   console.groupEnd();
-//   console.group("descending():");
-//     givenLinkedList.descending();
-//     givenLinkedList.print(); // 322 -> 32 -> 23 -> 8 -> 0 -> -5
-//   console.groupEnd();
-// console.groupEnd();
+const givenLinkedList = new LinkedList();
+givenLinkedList.add(23);
+givenLinkedList.add(32);
+givenLinkedList.add(-5);
+givenLinkedList.add(0);
+givenLinkedList.add(322);
+givenLinkedList.add(8);
+console.group("LinkedList");
+  console.group("ascending():");
+    givenLinkedList.ascending();
+    givenLinkedList.print(); // -5 -> 0 -> 8 -> 23 -> 32 -> 322
+  console.groupEnd();
+  console.group("descending():");
+    givenLinkedList.descending();
+    givenLinkedList.print(); // 322 -> 32 -> 23 -> 8 -> 0 -> -5
+  console.groupEnd();
+console.groupEnd();

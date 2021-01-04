@@ -49,7 +49,51 @@ class LinkedList extends OrderBy {
     tail.next = node;
   }
 
-  // TODO
+  ascending(): void{
+    if (!this.head){
+      return;
+    }
+
+    let current : Node | null = this.head;  
+    let next = null;
+    var temp;  
+          
+    while (current){
+      next = current.next;  
+      while (next){  
+        if(current.data > next.data){  
+          temp = current.data;  
+          current.data = next.data;  
+          next.data = temp;                 
+        }
+        next = next.next;
+      }  
+      current = current.next;
+    }   
+  }
+  
+  descending(): void{
+    if (!this.head){
+      return;
+    }
+
+    let current : Node | null = this.head;  
+    let next = null;
+    var temp;  
+          
+    while (current){
+      next = current.next;  
+      while (next){  
+        if(current.data < next.data){  
+          temp = current.data;  
+          current.data = next.data;  
+          next.data = temp;                 
+        }
+        next = next.next;
+      }  
+      current = current.next;
+    }   
+  }
 
   print(): void {
     if (!this.head) {
